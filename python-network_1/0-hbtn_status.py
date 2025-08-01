@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import urllib.request
 
-with urllib.request.urlopen('https://alu-intranet.hbtn.io/status') as response:
+with urllib.request.urlopen('http://0.0.0.0:5050/status') as response:
     body = response.read()
     print("Body response:")
     print("\t- type:", type(body))
